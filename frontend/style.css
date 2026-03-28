@@ -1,0 +1,100 @@
+ /* ===== Body & Fonts ===== */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  h1 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+
+  /* ===== Input & Add Button ===== */
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 200px;
+  }
+
+  input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 3px #4a90e2;
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #357abd;
+  }
+
+  /* ===== To-Do List ===== */
+  ul {
+    list-style-type: none; /* remove bullets */
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  li {
+    display: flex; /* enable flex layout */
+    justify-content: space-between; /* text left, delete button right */
+    align-items: center; /* vertically center items */
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  li button.delete {
+    margin-left: 0; /* flex handles spacing */
+    background-color: #e74c3c; /* red for delete */
+  }
+
+  li button.delete:hover {
+    background-color: #c0392b; /* darker red on hover */
+  }
+  .back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: #1e7e34;
+}
+
+/* Optional: center it */
+.back-btn {
+    margin: 20px;
+}
+
+  /* ===== Responsive ===== */
+  @media (max-width: 300px) {
+    li, input {
+      width: 90%;
+    }
+  }
+  
+
+
+
+
